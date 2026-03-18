@@ -92,8 +92,8 @@ def print_shortest_paths(result: DijkstraResult) -> None:
     print(f"{'Destination':<20} {'Distance (km)':<16} Path")
     print("-" * 72)
 
-    for destination in sorted(result.distances):
-        dist = result.distances[destination]
+    # Sort by distance value (nearest city first), unreachable cities last
+    for destination, dist in sorted(result.distances.items(), key=lambda x: x[1]):
         if dist == float("inf"):
             print(f"{destination:<20} {'UNREACHABLE':<16} -")
             continue

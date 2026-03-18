@@ -63,3 +63,5 @@ Thumbs.db
 # Keep CSV data tracked (including under data/)
 !*.csv
 !data/**/*.csv
+venv/
+__pycache__/
