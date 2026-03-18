@@ -70,7 +70,7 @@ Notes:
 - Total planning runtime
 
 ## Quick Run (Problems 2 and 3)
-The code for problem 2 and 3 has been combined together and uploadedon
+The code for problem 2 and 3 has been combined together and uploaded on
 ```
 ugv_navigation.py
 ```
